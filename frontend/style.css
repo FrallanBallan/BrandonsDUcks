@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: gray; */
+    font-family: sans-serif;
+    /* background-color: blue; */
+}
+.wrap {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+        background-color: blue;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        
+    border: 1px solid dodgerblue;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: dodgerblue;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 4px 1px 2px;
+}
+.navBar h2 {
+    background: rgb(255, 196, 0);
+    width: 200px;
+    border-radius: 0 8px 8px 0;
+    border: 1px solid black;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.navBar button {
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100px;
+    background: rgb(255, 196, 0);
+}
+.navBar span {
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    background: rgb(255, 196, 0);
+}
+.loginReg {
+    display: flex;
+    
+    background-color: dodgerblue;
+}
+.filterBar{
+  display: flex;
+  justify-content: center;
+}
+#sort {
+    background: rgb(255, 196, 0);
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.main {
+    /* z-index: -1; */
+    height: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    gap: 16px;
+    padding: 32px 20px;
+    position: relative;
+    height: 100%;
+}
+
+.bookCard {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 16px;
+    gap: 8px;
+    box-shadow: 3px 3px 4px 5px rgb(43, 144, 226);
+    background: green;
+    border-radius: 6px;
+    border: 2px solid rgb(255, 196, 0) ;
+
+}
+
+
+.bookCard img {
+    object-fit: contain;
+    width: 100%;
+    height: 60%;
+}
+.bookInfo {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255, 196, 0);
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+}
+.rating-container {
+    background: rgb(255, 196, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.bookMarkIcon {
+    cursor: pointer;
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-self: baseline;
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.login-container {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    min-width: 200px;
+    width: 500px;
+    gap: 18px;
+    padding: 24px;
+    border: 1px solid black;
+    background: rgb(255, 196, 0);
+    border-radius: 16px;
+}
+.register-container {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    min-width: 200px;
+    width: 500px;
+    gap: 18px;
+    padding: 24px;
+    border: 1px solid black;
+    background: rgb(255, 196, 0);
+    border-radius: 16px;
+}
+
+/* Color Schems */
+
+.winter {
+    background-color: rgb(64, 64, 167);
+}

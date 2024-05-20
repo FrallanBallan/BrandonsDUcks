@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookDuck</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="navBar">
+            <h2 id="mainHead">Book Duck</h2>
+            <div class="user-role">
+                <span id="userWelcome"> </span>
+            </div>
+            <div class="loginReg">
+                <!-- Byt till LogOut och My page vid inloggat? -->
+                <button id="loginBtn">Login</button>
+                <button id="signUpBtn">Sign up</button>
+                <button id="logoutBtn">Log out</button>
+                <button id="myBookpage">My books</button>
+            </div>
+        </div>
+        <div class="filterBar">
+            <select name="sort" id="sort">
+
+                <option value="null">Sort by:</option>
+                <option value="title">Title A-Z</option>
+                <option value="author">Author A-Z</option>
+                <option value="rating">Rating High to low</option>
+            </select>
+
+            <!-- Gör knappar istället -->
+        </div>
+        <div id="mainPage" class="main">
+            <!-- Add class to mainPage for color themes -->
+            <div class="bookCard">
+                <div class="titleRateFavorite">
+                    <h3>Titel</h3>
+                </div>
+                <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="#">
+                <div class="bookInfo">
+                    <span>Author: Frallan Ballan</span>
+                    <span>Pages: 230</span>
+                    <span>Published: 20/04/2024</span>
+                </div>
+                <!-- <i id="bookMark" class="fa-regular fa-bookmark"></i> -->
+                <i id="bookMark" class="bookMarkIcon">📩</i>
+                <span class="rating-container">5/10</span>
+                <!-- Add Like/Favorite -->
+            </div>
+
+        </div>
+        <div class="login-container">
+            <h3>Login</h3>
+            <input id="loginUser" type="text" placeholder="Username">
+            <input id="loginPassword" type="password" placeholder="Password">
+            <button id="enterBtn">Enter</button>
+        </div>
+        <div class="register-container">
+            <h3>Register</h3>
+            <input id="registerUser" type="text" placeholder="Username">
+            <input id="registerPassword" type="password" placeholder="Password">
+            <button id="registerBtn">Register</button>
+        </div>
+        <!-- <footer>FrallanBallanLekerAllan🥩</footer> -->
+    </div>
+</body>
+
+</html>
